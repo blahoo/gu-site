@@ -2,14 +2,11 @@ import { useRouter } from "./Router";
 import { PageTransition } from "./PageTransition";
 import { useState, useRef, useLayoutEffect, useEffect } from "react";
 import { motion } from "motion/react";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { CMS, CMSEntry } from "../data/cms";
 
 export function ProjectsPage() {
   const { navigate } = useRouter();
-  const [showAll, setShowAll] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [contentHeight, setContentHeight] = useState(0);
-  const [animationComplete, setAnimationComplete] = useState(false);
   const [projects, setProjects] = useState<Omit<CMSEntry, 'content'>[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -28,17 +25,46 @@ export function ProjectsPage() {
     loadProjects();
   }, []);
 
-  // Split projects into initial and additional for display
-  const initialProjects = projects.slice(0, 2);
-  const additionalProjects = projects.slice(2);
+  // No split: always show all projects
 
+  // Equalize card heights to the tallest visible card
   useLayoutEffect(() => {
-    if (containerRef.current) {
-      const baseHeight = containerRef.current.scrollHeight;
-      const extraPadding = 40; // space for hover animation
-      setContentHeight(baseHeight + extraPadding);
-    }
-  }, [showAll]);
+    const equalizeCardHeights = () => {
+      const cards = document.querySelectorAll<HTMLDivElement>(
+        ".project-card",
+      );
+      if (!cards.length) return;
+
+      // Reset to natural height to measure correctly
+      cards.forEach((card) => {
+        card.style.height = "auto";
+      });
+
+      let max = 0;
+      cards.forEach((card) => {
+        const h = card.offsetHeight;
+        if (h > max) max = h;
+      });
+
+      cards.forEach((card) => {
+        card.style.height = `${max}px`;
+      });
+    };
+
+    equalizeCardHeights();
+    const onResize = () => equalizeCardHeights();
+    window.addEventListener("resize", onResize);
+
+    // Re-run after async image loads
+    const t1 = setTimeout(equalizeCardHeights, 200);
+    const t2 = setTimeout(equalizeCardHeights, 800);
+
+    return () => {
+      window.removeEventListener("resize", onResize);
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
+  }, [projects]);
 
   const ProjectCard = ({
     project,
@@ -46,37 +72,32 @@ export function ProjectsPage() {
     project: Omit<CMSEntry, 'content'>;
   }) => (
     <motion.div
-      whileHover={{ scale: 1.05 }}
       transition={{
         type: "spring",
         stiffness: 300,
         damping: 20,
       }}
-      className="mb-6 relative cursor-pointer"
+      className="relative cursor-pointer"
       onClick={() => navigate(`/project/${project.slug}`)}
     >
-      <div
-        className="flex white bg-opacity-50 rounded-[10px] shadow-md overflow-hidden
-                   h-[150px] md:h-[160px] lg:h-[170px] hover:shadow-lg transition-shadow duration-200"
-      >
-        {/* Image */}
-        <div
-          className="flex-shrink-0 w-[120px] md:w-[130px] lg:w-[150px] h-full bg-center bg-cover bg-no-repeat"
-          style={{ backgroundImage: `url('${project.coverImage?.url || 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop'}')` }}
-        />
-        <div className="flex flex-col justify-between p-4 flex-grow">
+      <div className="project-card flex flex-col white bg-opacity-50 rounded-[10px] shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200">
+        {/* Top half image */}
+        <div className="flex-[0_0_50%] w-full">
+          <ImageWithFallback
+            src={project.coverImage?.url || "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop"}
+            alt={project.coverImage?.alt || project.title}
+            className="project-card-img w-full h-full object-cover"
+          />
+        </div>
+        {/* Bottom half text */}
+        <div className="flex-[0_0_50%] p-4 flex flex-col gap-2 justify-between">
           <div>
             <p className="text-xl md:text-xl lg:text-2xl font-semibold text-gray-900">
               {project.title}
             </p>
-            <p className="text-base md:text-base lg:text-lg text-gray-700">
+            <p className="text-base md:text-base lg:text-lg text-gray-700 mb-0">
               {project.description}
             </p>
-          </div>
-          <div className="self-start mt-3 bg-gray-100 h-[34px] md:h-[36px] rounded-[8px] px-4 border-gray-300 border-[1.5px] flex items-center justify-center gap-1">
-            <span className="font-bold text-gray-900 text-sm md:text-sm lg:text-base">
-              →{" "}
-            </span>
           </div>
         </div>
       </div>
@@ -106,55 +127,11 @@ export function ProjectsPage() {
           </p>
         </div>
 
-        {initialProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-
-        {additionalProjects.length > 0 && (
-          <motion.div
-            style={{
-              overflow:
-                showAll && animationComplete
-                  ? "visible"
-                  : "hidden",
-            }}
-            animate={{ height: showAll ? contentHeight : 0 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-            onAnimationComplete={() => {
-              if (showAll) setAnimationComplete(true);
-            }}
-            ref={containerRef}
-            initial={false}
-          >
-            <div className="pb-2 px-2">
-              {additionalProjects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
-            </div>
-          </motion.div>
-        )}
-
-        {additionalProjects.length > 0 && (
-          <div className="flex justify-center mb-8 mt-2">
-            <motion.button
-              onClick={() => {
-                setAnimationComplete(false);
-                setShowAll(!showAll);
-              }}
-              whileHover={{ scale: 1.05 }}
-              transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 20,
-              }}
-              className="bg-gray-100 h-[28px] md:h-[28px] rounded-[8px] w-[130px] md:w-[150px] border-gray-300 border-[1.5px] border-solid hover:bg-gray-200 transition-colors duration-200 flex items-center justify-center gap-2"
-            >
-              <span className="font-['Inter:Bold',_sans-serif] font-bold text-gray-900 text-[12px] md:text-[11px] lg:text-[12px]">
-                {showAll ? "Show less" : "More projects"}
-              </span>
-            </motion.button>
-          </div>
-        )}
+        <div className="projects-grid">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
       </div>
     </PageTransition>
   );
