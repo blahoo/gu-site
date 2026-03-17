@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/Users/gugre/DEV/gu-site-v2 -type f -name *.json -path */dist/* -o -path */.next/* -o -path */build/*)",
+      "Bash(grep -r pages[ /c/Users/gugre/DEV/gu-site-v2/client/src --include=*.ts --include=*.tsx)",
+      "Bash(grep -r app. /c/Users/gugre/DEV/gu-site-v2/server --include=*.ts)",
+      "Bash(grep -r \"fetch\\\\|axios\\\\|api\" /c/Users/gugre/DEV/gu-site-v2/client/src --include=*.ts --include=*.tsx)"
+    ]
+  }
+}
