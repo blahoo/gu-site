@@ -4,7 +4,7 @@ label: "Home"
 order: 0
 ---
 
-# Hey I'm Greg
+# Hey I'm Gregory Gu
 
 Currently 1A @uwaterloo for computer engineering
 
