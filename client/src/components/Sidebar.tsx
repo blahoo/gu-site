@@ -125,7 +125,7 @@ export default function Sidebar({
       style={{
         background: "var(--sidebar)",
         borderRight: "1px solid var(--sidebar-border)",
-        width: "260px",
+        width: "290px",
         flexShrink: 0,
       }}
     >

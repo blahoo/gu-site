@@ -13,9 +13,11 @@ interface ContactSectionProps {
 // Inline SVG icon components using currentColor for CSS color control
 function GmailIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <svg viewBox="0 0 512.004 512.004" fill="currentColor" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M506.394,92.79L363.119,228.172L506.394,419.19c3.477-6.955,5.611-14.656,5.611-22.955V115.745 C512.004,107.468,509.85,99.745,506.394,92.79z"/>
+      <path d="M281.131,246.979L472.896,65.753c-4.075-1.045-8.256-1.749-12.651-1.749H51.755c-4.736,0-9.216,0.832-13.568,2.027 l192.939,181.184C245.163,260.014,266.795,260.014,281.131,246.979z"/>
+      <path d="M310.118,278.273c-15.509,14.123-34.88,21.184-54.229,21.184c-19.221,0-38.421-6.976-53.717-20.907l-22.08-20.736 L40.849,446.785c3.52,0.768,7.147,1.216,10.901,1.216h408.491c4.523,0,8.853-0.768,13.035-1.877L331.921,257.665L310.118,278.273z"/>
+      <path d="M5.184,93.575C1.963,100.317,0,107.783,0,115.741v280.512c0,9.088,2.56,17.536,6.699,24.96l142.08-192.789L5.184,93.575z"/>
     </svg>
   );
 }
@@ -97,7 +99,7 @@ export default function ContactSection({ imageSrc }: ContactSectionProps) {
         display: "flex",
         flexDirection: "column",
         height: "100%",
-        padding: "1.25rem 0.75rem",
+        padding: "1.75rem 1.25rem",
         fontSize: "0.85rem",
       }}
     >
@@ -124,18 +126,27 @@ export default function ContactSection({ imageSrc }: ContactSectionProps) {
         ))}
       </div>
 
-      {/* Profile Image — cropped to left 75% */}
+      {/* Profile Image — width matches the bar, height scales naturally */}
       <div
         style={{
-          flex: 1,
-          backgroundImage: `url('${imageSrc}')`,
-          backgroundSize: "contain",
-          backgroundPosition: "bottom right",
-          backgroundRepeat: "no-repeat",
           marginTop: "auto",
+          marginLeft: "-1.25rem",
+          marginRight: "-1.25rem",
+          marginBottom: "-1.75rem",
           overflow: "hidden",
         }}
-      />
+      >
+        <img
+          src={imageSrc}
+          alt="Portrait"
+          style={{
+            display: "block",
+            width: "100%",
+            height: "auto",
+            objectFit: "contain",
+          }}
+        />
+      </div>
     </div>
   );
 }

@@ -84,7 +84,7 @@
   --nav-active-bg: oklch(1 0 0 / 0.09);
   --nav-active-border: #4468F5;
   --content-max-width: 740px;
-  --sidebar-width: 260px;
+  --sidebar-width: 290px;
   --transition-fast: 150ms ease;
 }
 
@@ -471,8 +471,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1.35rem;
+    height: 1.35rem;
     color: var(--foreground);
     text-decoration: none;
     transition: color 150ms ease;
