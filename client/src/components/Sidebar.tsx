@@ -63,7 +63,7 @@ function NavTreeItem({
   return (
     <div>
       <div
-        className={`nav-item ${isActive || isParentActive ? "active" : ""}`}
+        className={`nav-item ${isActive ? "active" : ""} ${hasChildren ? "nav-dir" : "nav-file"}`}
         style={{ paddingLeft }}
         onClick={handleClick}
         role="button"
@@ -203,17 +203,6 @@ export default function Sidebar({
         ))}
       </nav>
 
-      {/* Footer */}
-      <div
-        className="px-3 py-3"
-        style={{
-          borderTop: "1px solid var(--border)",
-          fontSize: "0.7rem",
-          color: "var(--muted-foreground)",
-        }}
-      >
-        <span>gregorygu.com</span>
-      </div>
     </div>
   );
 

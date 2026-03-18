@@ -129,7 +129,7 @@ function AppLayout() {
           onMouseEnter={() => setHoverZone("left")}
           onMouseLeave={() => setHoverZone(null)}
           style={{
-            opacity: hoverZone === "center" ? 0.55 : 1,
+            opacity: hoverZone === "center" ? 0.35 : 1,
             transition: "opacity 300ms ease",
           }}
         >
@@ -188,7 +188,7 @@ function AppLayout() {
             overflowY: "auto",
             display: "flex",
             justifyContent: "center",
-            opacity: hoverZone === "left" || hoverZone === "right" ? 0.55 : 1,
+            opacity: hoverZone === "left" || hoverZone === "right" ? 0.35 : 1,
             transition: "opacity 300ms ease",
           }}
           className="lg:pr-80 pr-0 lg:pl-0 pl-0"
@@ -216,7 +216,7 @@ function AppLayout() {
             borderLeft: "1px solid var(--border)",
             background: "var(--background)",
             flexDirection: "column",
-            opacity: hoverZone === "center" ? 0.55 : 1,
+            opacity: hoverZone === "center" ? 0.35 : 1,
             transition: "opacity 300ms ease",
           }}
           className="hidden lg:flex"

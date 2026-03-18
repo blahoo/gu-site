@@ -71,13 +71,13 @@
   --destructive: oklch(0.65 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
 
-  --border: oklch(1 0 0 / 0.06);               /* rgba(255,255,255,0.06) */
+  --border: oklch(1 0 0 / 0.12);               /* rgba(255,255,255,0.12) */
   --input: oklch(1 0 0 / 0.08);
   --ring: #4468F5;
 
   --sidebar: oklch(0.11 0.002 240);             /* #141414 */
   --sidebar-foreground: oklch(0.86 0.004 240);
-  --sidebar-border: oklch(1 0 0 / 0.06);
+  --sidebar-border: oklch(1 0 0 / 0.12);
 
   /* Custom design tokens */
   --nav-hover-bg: oklch(1 0 0 / 0.05);
@@ -160,7 +160,7 @@
     transition: color var(--transition-fast), background var(--transition-fast);
     cursor: pointer;
     user-select: none;
-    border-left: 2px solid transparent;
+    /* No left border indicator */
     text-decoration: none;
     white-space: nowrap;
     overflow: hidden;
@@ -168,14 +168,20 @@
   }
 
   .nav-item:hover {
-    color: var(--foreground);
+    color: var(--primary);
     background: var(--nav-hover-bg);
   }
 
-  .nav-item.active {
-    color: var(--primary);
+  /* Only the directly selected file gets highlighted */
+  .nav-item.active.nav-file {
+    color: var(--foreground);
     background: var(--nav-active-bg);
-    border-left-color: var(--nav-active-border);
+  }
+
+  /* Directories are never highlighted — no active styling */
+  .nav-item.active.nav-dir {
+    color: var(--muted-foreground);
+    background: transparent;
   }
 
   .nav-category {
@@ -458,5 +464,20 @@
   /* ---- Smooth transitions for sidebar items ---- */
   .nav-item {
     transition: color 150ms ease, background 150ms ease, border-color 150ms ease, padding-left 150ms ease;
+  }
+
+  /* ---- Social icon links ---- */
+  .social-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.1rem;
+    height: 1.1rem;
+    color: var(--foreground);
+    text-decoration: none;
+    transition: color 150ms ease;
+  }
+  .social-icon-link:hover {
+    color: var(--primary);
   }
 }
