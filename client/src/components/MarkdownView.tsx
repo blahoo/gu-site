@@ -8,7 +8,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
 import { useLocation } from "wouter";
-import { loadPage, type Page } from "@/lib/content";
+import { loadPage, resolveDirectoryPage, type Page } from "@/lib/content";
 import { useEffect, useRef, useState } from "react";
 import { ExternalLink } from "lucide-react";
 
@@ -58,6 +58,7 @@ function CustomLink({
 }
 
 export default function MarkdownView({ pageId }: MarkdownViewProps) {
+  const [, navigate] = useLocation();
   const [page, setPage] = useState<Page | null>(null);
   const [loading, setLoading] = useState(true);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -112,13 +113,68 @@ export default function MarkdownView({ pageId }: MarkdownViewProps) {
         boxSizing: "border-box",
       }}
     >
+      {/* File path breadcrumb */}
+      <div
+        style={{
+          fontSize: "0.78rem",
+          color: "var(--muted-foreground)",
+          opacity: 0.6,
+          marginBottom: "0.25rem",
+        }}
+      >
+        {(() => {
+          const segments = page.id.split("/");
+          // Prepend "home" and deduplicate if page.id is already "home"
+          const allSegments = page.id === "home" ? ["home"] : ["home", ...segments];
+          return allSegments.map((segment, i) => {
+            const isLast = i === allSegments.length - 1;
+            // "home" links to /home; directory segments resolve to their index/overview page
+            const dirPath = i === 0 ? "home" : segments.slice(0, i).join("/");
+            const resolved = i === 0 ? "home" : resolveDirectoryPage(dirPath);
+            const path = resolved ? `/${resolved}` : `/${dirPath}`;
+            return (
+              <span key={i}>
+                {i > 0 && " / "}
+                {isLast ? (
+                  <span>{segment}</span>
+                ) : (
+                  <a
+                    href={path}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigate(path);
+                    }}
+                    style={{
+                      color: "inherit",
+                      textDecoration: "none",
+                      cursor: "pointer",
+                      transition: "opacity 150ms ease",
+                    }}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLElement).style.opacity = "0.7";
+                      (e.currentTarget as HTMLElement).style.textDecoration = "underline";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLElement).style.opacity = "1";
+                      (e.currentTarget as HTMLElement).style.textDecoration = "none";
+                    }}
+                  >
+                    {segment}
+                  </a>
+                )}
+              </span>
+            );
+          });
+        })()}
+      </div>
+
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeHighlight]}
         components={{
           a: CustomLink,
           h1: ({ children }) => (
-            <h1 style={{ marginTop: "2rem", marginBottom: "1rem", fontSize: "2rem", fontWeight: 600 }}>
+            <h1 style={{ marginTop: "0.5rem", marginBottom: "1rem", fontSize: "2rem", fontWeight: 600 }}>
               {children}
             </h1>
           ),
@@ -256,7 +312,6 @@ export default function MarkdownView({ pageId }: MarkdownViewProps) {
           gap: "1rem",
         }}
       >
-        <span style={{ opacity: 0.6 }}>{page.id}</span>
         <span style={{ opacity: 0.5 }}>gregorygu.com</span>
       </div>
     </div>

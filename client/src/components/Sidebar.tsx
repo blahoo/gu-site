@@ -87,7 +87,7 @@ function NavTreeItem({
         <span
           className="truncate"
           style={{
-            fontSize: depth === 0 ? "0.82rem" : "0.78rem",
+            fontSize: depth === 0 ? "0.93rem" : "0.88rem",
             fontWeight: depth === 0 ? 500 : 400,
           }}
         >

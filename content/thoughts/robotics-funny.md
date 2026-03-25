@@ -1,3 +1,8 @@
+---
+title: "The Absurdity of Building Robots"
+order: 
+---
+
 # The Absurdity of Building Robots
 
 ![Robot Development](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop)

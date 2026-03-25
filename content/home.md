@@ -8,6 +8,8 @@ order: 0
 
 Currently 1A @uwaterloo for computer engineering
 
+![sittingwarrig](/images/sittingwarrig.png)
+
 This site is my personal repository, a place where I document my projects, any notes, and trying to keep a record of what I've been building and learning.
 
 ## Recent Projects

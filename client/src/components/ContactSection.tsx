@@ -67,27 +67,27 @@ function StatistaIcon(props: SVGProps<SVGSVGElement>) {
 const socialLinks = [
   {
     label: "Email",
-    href: "mailto:gregory@gregorygu.com",
+    href: "mailto:gu.gregory.gg@gmail.com",
     Icon: GmailIcon,
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/gregorygu",
+    href: "https://www.linkedin.com/in/gregory-gu/",
     Icon: LinkedInIcon,
   },
   {
     label: "X / Twitter",
-    href: "https://x.com/gregorygu",
+    href: "https://x.com/1gugre",
     Icon: XIcon,
   },
   {
     label: "GitHub",
-    href: "https://github.com/gregorygu",
+    href: "https://github.com/blahoo",
     Icon: GithubIcon,
   },
   {
     label: "Statista",
-    href: "https://statista.com",
+    href: "https://www.statista.com/statistics/1235595/rate-hearing-loss-by-severity-worldwide/",
     Icon: StatistaIcon,
   },
 ];
