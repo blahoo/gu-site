@@ -1,6 +1,6 @@
 ---
 title: "Apocalypse Hackathon"
-label: "Apocalypse Hackathon"
+order: 
 ---
 
 # The Apocalypse Hackathon Experience
