@@ -116,7 +116,7 @@ export default function MarkdownView({ pageId }: MarkdownViewProps) {
       {/* File path breadcrumb */}
       <div
         style={{
-          fontSize: "0.78rem",
+          fontSize: "0.84rem",
           color: "var(--muted-foreground)",
           opacity: 0.6,
           marginBottom: "0.25rem",
@@ -129,39 +129,43 @@ export default function MarkdownView({ pageId }: MarkdownViewProps) {
           return allSegments.map((segment, i) => {
             const isLast = i === allSegments.length - 1;
             // "home" links to /home; directory segments resolve to their index/overview page
-            const dirPath = i === 0 ? "home" : segments.slice(0, i).join("/");
-            const resolved = i === 0 ? "home" : resolveDirectoryPage(dirPath);
-            const path = resolved ? `/${resolved}` : `/${dirPath}`;
+            // Last segment links to itself (current page)
+            let path: string;
+            if (isLast) {
+              path = `/${page.id}`;
+            } else if (i === 0) {
+              path = "/home";
+            } else {
+              const dirPath = segments.slice(0, i).join("/");
+              const resolved = resolveDirectoryPage(dirPath);
+              path = resolved ? `/${resolved}` : `/${dirPath}`;
+            }
             return (
               <span key={i}>
                 {i > 0 && " / "}
-                {isLast ? (
-                  <span>{segment}</span>
-                ) : (
-                  <a
-                    href={path}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      navigate(path);
-                    }}
-                    style={{
-                      color: "inherit",
-                      textDecoration: "none",
-                      cursor: "pointer",
-                      transition: "opacity 150ms ease",
-                    }}
-                    onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLElement).style.opacity = "0.7";
-                      (e.currentTarget as HTMLElement).style.textDecoration = "underline";
-                    }}
-                    onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLElement).style.opacity = "1";
-                      (e.currentTarget as HTMLElement).style.textDecoration = "none";
-                    }}
-                  >
-                    {segment}
-                  </a>
-                )}
+                <a
+                  href={path}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate(path);
+                  }}
+                  style={{
+                    color: "inherit",
+                    textDecoration: "none",
+                    cursor: "pointer",
+                    transition: "color 150ms ease, opacity 150ms ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLElement).style.color = "var(--primary)";
+                    (e.currentTarget as HTMLElement).style.textDecoration = "underline";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLElement).style.color = "inherit";
+                    (e.currentTarget as HTMLElement).style.textDecoration = "none";
+                  }}
+                >
+                  {segment}
+                </a>
               </span>
             );
           });

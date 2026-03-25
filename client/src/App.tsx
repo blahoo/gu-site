@@ -53,7 +53,8 @@ function AppLayout() {
     <div
       style={{
         display: "flex",
-        minHeight: "100vh",
+        height: "100vh",
+        overflow: "hidden",
         background: "var(--background)",
         flexDirection: "column",
       }}
@@ -185,7 +186,7 @@ function AppLayout() {
           style={{
             flex: 1,
             minWidth: 0,
-            overflowY: "auto",
+            overflowY: "scroll",
             display: "flex",
             justifyContent: "center",
             opacity: hoverZone === "left" || hoverZone === "right" ? 0.35 : 1,
