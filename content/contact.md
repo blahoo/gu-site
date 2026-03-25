@@ -1,19 +1,19 @@
 ---
 title: "Contact"
 label: "Get in Touch"
-order: 5
----
+order: -1
+--- 
 
 # Contact
 
-I'm always happy to talk about interesting projects, research, or opportunities. Get in touch!
+I'm always down to talk about interesting projects, research, or stuff in general - just lmk!
 
-**Email:** [hello@gregorygu.com](mailto:hello@gregorygu.com)
+**Email:** [gu.gregory.gg@gmail.com](mailto:gu.gregory.gg@gmail.com)
 
-**GitHub:** [github.com/gregorygu](https://github.com)
+**GitHub:** [github.com/blahoo](https://github.com/blahoo)
 
-**LinkedIn:** [linkedin.com/in/gregorygu](https://linkedin.com)
+**LinkedIn:** [linkedin.com/in/gregory-gu/](https://www.linkedin.com/in/gregory-gu/)
+
+**X (Twitter)** [x.com/1gugre](https://x.com/1gugre)
 
 **Website:** [gregorygu.com](https://gregorygu.com)
-
-Feel free to reach out if you'd like to discuss distributed systems, compilers, machine learning infrastructure, or anything else. I'm always interested in learning from others and collaborating on interesting problems.

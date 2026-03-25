@@ -1,6 +1,11 @@
+---
+title: "Apocalypse Hackathon"
+label: "Apocalypse Hackathon"
+---
+
 # The Apocalypse Hackathon Experience
 
-![Hackathon Scene](../../src/assets/apocsign.png)
+![Hackathon Scene](/images/apocsign.png)
 
 Apoc wasn't just another hackathon - it was a 48-hour marathon that pushed the boundaries of what we thought possible in rapid prototyping and collaborative engineering.
 

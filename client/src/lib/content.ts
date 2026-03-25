@@ -181,6 +181,15 @@ function buildTreeLevel(basePath: string): NavItem[] {
 
 export const navTree: NavItem[] = buildTreeLevel("");
 
+// Resolve a directory path to its index/overview page ID (if one exists)
+export function resolveDirectoryPage(dirPath: string): string | null {
+  const indexId = dirPath + "/index";
+  const overviewId = dirPath + "/overview";
+  if (pages[indexId]) return indexId;
+  if (pages[overviewId]) return overviewId;
+  return null;
+}
+
 // Load a page by ID
 export async function loadPage(pageId: string): Promise<Page> {
   return (

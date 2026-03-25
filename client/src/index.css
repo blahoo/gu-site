@@ -480,4 +480,11 @@
   .social-icon-link:hover {
     color: var(--primary);
   }
+
+  /* ---- Reduce top padding on mobile content ---- */
+  @media (max-width: 1023px) {
+    .page-enter {
+      padding-top: 0.75rem !important;
+    }
+  }
 }

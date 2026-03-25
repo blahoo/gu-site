@@ -1,3 +1,8 @@
+---
+title: "Poker Lessons"
+order: 
+---
+
 # What Poker Taught Me About Engineering
 
 ![Poker Table](https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=600&h=400&fit=crop)
