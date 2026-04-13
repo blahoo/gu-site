@@ -3,6 +3,8 @@ title: "Warrig X1"
 order: 
 ---
 
+WIP (ai slop rn)
+
 # Building an Electric Vehicle from Scratch
 
 The Warrig x1 started as a crazy idea during a late-night engineering session. What if we could build a small, efficient electric vehicle that could navigate urban environments with ease?

@@ -3,6 +3,8 @@ title: "This Website"
 order: 
 ---
 
+WIP (ai slop rn)
+
 # This Website
 
 A personal knowledge repository and portfolio, built as a markdown-first single-page application. The entire content is stored in plain markdown files organized in a folder structure.
