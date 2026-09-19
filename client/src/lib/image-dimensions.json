@@ -1,0 +1,294 @@
+{
+  "/images/apocsign.jpg": [
+    1480,
+    1480
+  ],
+  "/images/apocsign.png": [
+    3024,
+    3024
+  ],
+  "/images/busbot.png": [
+    2018,
+    2691
+  ],
+  "/images/cntower.png": [
+    2936,
+    3670
+  ],
+  "/images/goodphoto.png": [
+    1536,
+    2048
+  ],
+  "/images/projects/antigrav-autonomy/cad-platform.jpg": [
+    1062,
+    1056
+  ],
+  "/images/projects/antigrav-autonomy/camera-detections.jpg": [
+    509,
+    544
+  ],
+  "/images/projects/antigrav-autonomy/compute-install.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/antigrav-autonomy/drive-unit.jpg": [
+    1600,
+    1200
+  ],
+  "/images/projects/antigrav-autonomy/fov-diagram.jpg": [
+    1231,
+    622
+  ],
+  "/images/projects/antigrav/cad.jpg": [
+    1069,
+    1062
+  ],
+  "/images/projects/antigrav/hero-night-hud.jpg": [
+    1600,
+    1200
+  ],
+  "/images/projects/antigrav/kart-parkinglot.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/antigrav/suspension.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/antigrav/weld-joint.jpg": [
+    1600,
+    1200
+  ],
+  "/images/projects/antigrav/welding.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/eburb-autonomy/brake-booster.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/eburb-autonomy/can-bench.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/eburb-autonomy/connector.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/eburb-autonomy/hero-eps-can.jpg": [
+    1600,
+    1199
+  ],
+  "/images/projects/eburb-autonomy/steering-wheel.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/eburb-autonomy/throttle-pedal.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/eburb-chassis/cad-frame.jpg": [
+    1256,
+    880
+  ],
+  "/images/projects/eburb-chassis/cad-panels.jpg": [
+    659,
+    343
+  ],
+  "/images/projects/eburb-chassis/chassis-garage.jpg": [
+    812,
+    1083
+  ],
+  "/images/projects/eburb-chassis/garage-wide.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/eburb-chassis/hero-welding.jpg": [
+    1536,
+    2048
+  ],
+  "/images/projects/eburb-chassis/leaf-pack-garage.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/eburb-chassis/leaf-pack-truck.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/eburb-chassis/suspension-angle.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/flightmap/assembled.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/flightmap/bench-fan.jpg": [
+    812,
+    1083
+  ],
+  "/images/projects/flightmap/flight-controller.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/flightmap/fpv-osd.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/flightmap/frame-build.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/flightmap/hero-inflight.jpg": [
+    887,
+    825
+  ],
+  "/images/projects/tvc-rocket/bench-test.jpg": [
+    929,
+    1238
+  ],
+  "/images/projects/tvc-rocket/breadboard.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/tvc-rocket/cad-body.jpg": [
+    1019,
+    901
+  ],
+  "/images/projects/tvc-rocket/cad-nosecone.jpg": [
+    611,
+    1037
+  ],
+  "/images/projects/tvc-rocket/hero-rocket.jpg": [
+    929,
+    1238
+  ],
+  "/images/projects/tvc-rocket/schematic.jpg": [
+    814,
+    574
+  ],
+  "/images/projects/tvc-rocket/soldering.jpg": [
+    929,
+    1238
+  ],
+  "/images/projects/warrig-selfdriving/camera-rig-closeup.jpg": [
+    577,
+    267
+  ],
+  "/images/projects/warrig-selfdriving/hero-camera-rig.jpg": [
+    1464,
+    844
+  ],
+  "/images/projects/warrig-selfdriving/steering-actuator.jpg": [
+    1290,
+    942
+  ],
+  "/images/projects/warrig-v1/assembled.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/warrig-v1/bandsaw.jpg": [
+    929,
+    1238
+  ],
+  "/images/projects/warrig-v1/chain-drive.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/warrig-v1/circuit.jpg": [
+    832,
+    294
+  ],
+  "/images/projects/warrig-v1/fea.jpg": [
+    1389,
+    957
+  ],
+  "/images/projects/warrig-v1/hero-frame-shop.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/warrig-v1/night-exterior.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/warrig-v1/steering-rack.jpg": [
+    562,
+    336
+  ],
+  "/images/projects/warrig-v2/driving.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/warrig-v2/hero-track.jpg": [
+    1600,
+    524
+  ],
+  "/images/projects/warrig-v2/motor-controllers.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/warrig-v2/motor-mount.jpg": [
+    1600,
+    2133
+  ],
+  "/images/projects/warrig-v2/weld-vise.jpg": [
+    1600,
+    2133
+  ],
+  "/images/sittingwarrig.jpg": [
+    1480,
+    1110
+  ],
+  "/images/sittingwarrig.png": [
+    4032,
+    3024
+  ],
+  "/images/thecurb.png": [
+    3072,
+    4096
+  ],
+  "/images/tiles/antigrav-autonomy.jpg": [
+    675,
+    900
+  ],
+  "/images/tiles/antigrav.jpg": [
+    900,
+    675
+  ],
+  "/images/tiles/apoc.jpg": [
+    900,
+    900
+  ],
+  "/images/tiles/chevy-booster.jpg": [
+    675,
+    900
+  ],
+  "/images/tiles/eburb-autonomy.jpg": [
+    900,
+    674
+  ],
+  "/images/tiles/eburb-chassis.jpg": [
+    675,
+    900
+  ],
+  "/images/tiles/flightmap.jpg": [
+    887,
+    825
+  ],
+  "/images/tiles/tvc-rocket.jpg": [
+    675,
+    900
+  ],
+  "/images/tiles/warrig-selfdriving.jpg": [
+    900,
+    519
+  ],
+  "/images/tiles/warrig-v1.jpg": [
+    675,
+    900
+  ],
+  "/images/tiles/warrig-v2.jpg": [
+    900,
+    295
+  ]
+}

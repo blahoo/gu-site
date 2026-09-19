@@ -1,13 +1,13 @@
 ---
 title: "Apocalypse Hackathon"
-order: 
+order: 10
 ---
 
 # Hack Club Apocalypse 
 
 WIP
 
-![Hackathon Scene](/images/apocsign.png)
+![Hackathon Scene](/images/apocsign.jpg)
 
 [check it out](https://apocalypse.hackclub.com/)
 

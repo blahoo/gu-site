@@ -358,6 +358,89 @@
     border: 1px solid var(--border);
   }
 
+  /* ---- Photo blocks ----
+     A markdown paragraph containing only images becomes a photo block.
+     One image = full width; two or more = responsive grid, cropped to a
+     common 4:3 so mixed portrait/landscape shots line up. */
+  .photo-single {
+    margin: 1.5rem 0;
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+  }
+
+  .photo-grid img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  @media (max-width: 640px) {
+    .photo-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .photo-grid img {
+      aspect-ratio: auto;
+    }
+  }
+
+  /* ---- Bento grid ----
+     A paragraph of linked images. Deliberately quiet: the tiles are uniform and
+     the label sits UNDER the photo in the same muted style as a photo block's
+     figcaption, so the grid reads as part of the document rather than as a set
+     of app-style cards. Uniform tiles also mean the count no longer has to be a
+     multiple of anything - a short last row just ends. */
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem 0.75rem;
+    margin: 1.5rem 0;
+  }
+
+  .bento-tile {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Two or four tiles land as 2+0 or 3+1 in a three-column grid, which reads as
+     an unfinished row. At those counts a balanced 2x2 (or 1x2) is the right
+     shape, and the bigger tiles suit a short curated list. */
+  .bento-grid:has(> :nth-child(2):last-child),
+  .bento-grid:has(> :nth-child(4):last-child) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bento-tile img {
+    transition: border-color 150ms ease;
+  }
+
+  .bento-tile:hover img {
+    border-color: var(--primary);
+  }
+
+  .bento-label {
+    display: block;
+    margin-top: 0.45rem;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: var(--muted-foreground);
+    transition: color 150ms ease;
+  }
+
+  .bento-tile:hover .bento-label {
+    color: var(--primary);
+  }
+
+  @media (max-width: 640px) {
+    .bento-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
   /* ---- Search overlay ---- */
   .search-overlay {
     position: fixed;

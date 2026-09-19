@@ -14,7 +14,7 @@ Here are some key highlights wrapping up the hs experience
 theres so many projects which happened during the past couple year, too many things to count, and many which didn't really amount to anything - that is the key lesson I learned: build to show, not to tell.
 
 
-top 10 phrases 
+top 8 phrases 
 
 1. "This should be simple"
 2. "Why isn't this working?"
@@ -24,5 +24,5 @@ top 10 phrases
 6. "Wait, it actually works now?"
 7. "Let's add more features"
 8. "Bro, something else broke"
-...
+
 

@@ -1,3 +1,7 @@
+---
+title: "eBurb Brakes: Choosing a Booster"
+---
+
 WIP
 
 The braking system was the system I spent the most time on through this project. While it is not as glamorous as other kinetic outputs in steering or main drive, it’s one of the least flexible systems in terms of architecture or part sourcing. 

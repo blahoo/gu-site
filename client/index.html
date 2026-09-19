@@ -8,6 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script>
+      // The homepage hero lives in markdown that gets bundled into the JS, so it
+      // is not in this HTML and the browser's preload scanner cannot find it.
+      // Without this hint its request cannot even start until the bundle has
+      // downloaded, parsed and rendered. Injected only on the homepage so other
+      // routes do not pay for an image they never show.
+      (function () {
+        var path = location.pathname;
+        if (path === "/" || path === "/home") {
+          var link = document.createElement("link");
+          link.rel = "preload";
+          link.as = "image";
+          link.href = "/images/sittingwarrig.jpg";
+          link.setAttribute("fetchpriority", "high");
+          document.head.appendChild(link);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
