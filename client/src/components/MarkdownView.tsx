@@ -148,13 +148,23 @@ export default function MarkdownView({ pageId }: MarkdownViewProps) {
   // rest stay lazy — lazy-loading a hero delays the largest paint.
   const heroOffset = page ? page.content.indexOf("![") : -1;
 
-  // Scroll to top on page change
+  // Scroll to top on page change.
+  // The scroll container is <main> in App.tsx, not this div and not the window:
+  // the div never overflows, and the app is height:100vh/overflow:hidden so the
+  // document never scrolls either. Resetting those two was a silent no-op, which
+  // is why opening a page from a scrolled position landed partway down it.
+  // Walk up and clear every scrolled ancestor instead. Runs again when `loading`
+  // flips, so a late layout shift as content renders cannot leave us mid-page.
   useEffect(() => {
-    if (containerRef.current) {
-      containerRef.current.scrollTop = 0;
+    for (
+      let el: HTMLElement | null = containerRef.current;
+      el;
+      el = el.parentElement
+    ) {
+      if (el.scrollTop !== 0) el.scrollTop = 0;
     }
     window.scrollTo(0, 0);
-  }, [pageId]);
+  }, [pageId, loading]);
 
   if (loading || !page) {
     return (
