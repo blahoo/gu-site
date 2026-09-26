@@ -32,6 +32,19 @@ function AppLayout() {
   const [location, navigate] = useLocation();
   const [hoverZone, setHoverZone] = useState<HoverZone>(null);
 
+  // Column dimming is a mouse-only effect. On touch, the first tap fires a
+  // synthetic mouseenter; changing state there makes iOS Safari treat the tap
+  // as a hover and swallow the click, so links (e.g. homepage tiles) needed two
+  // taps. Pointer events tell us the input type, so touch never sets the zone.
+  const hoverHandlers = (zone: Exclude<HoverZone, null>) => ({
+    onPointerEnter: (e: React.PointerEvent) => {
+      if (e.pointerType === "mouse") setHoverZone(zone);
+    },
+    onPointerLeave: (e: React.PointerEvent) => {
+      if (e.pointerType === "mouse") setHoverZone(null);
+    },
+  });
+
   // Global keyboard shortcut: ⌘K or Ctrl+K to open search
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -127,8 +140,7 @@ function AppLayout() {
         {/* Left Sidebar - hidden on mobile */}
         <div
           className="hidden lg:block"
-          onMouseEnter={() => setHoverZone("left")}
-          onMouseLeave={() => setHoverZone(null)}
+          {...hoverHandlers("left")}
           style={{
             opacity: hoverZone === "center" ? 0.35 : 1,
             transition: "opacity 300ms ease",
@@ -181,8 +193,7 @@ function AppLayout() {
 
         {/* Center content area */}
         <main
-          onMouseEnter={() => setHoverZone("center")}
-          onMouseLeave={() => setHoverZone(null)}
+          {...hoverHandlers("center")}
           style={{
             flex: 1,
             minWidth: 0,
@@ -205,8 +216,7 @@ function AppLayout() {
 
         {/* Right Sidebar - Fixed Contact Section - hidden on mobile */}
         <div
-          onMouseEnter={() => setHoverZone("right")}
-          onMouseLeave={() => setHoverZone(null)}
+          {...hoverHandlers("right")}
           style={{
             position: "fixed",
             right: 0,

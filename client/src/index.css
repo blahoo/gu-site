@@ -418,8 +418,16 @@
     transition: border-color 150ms ease;
   }
 
-  .bento-tile:hover img {
-    border-color: var(--primary);
+  /* Hover tints only where a real hover exists. On touch, :hover sticks after a
+     tap and iOS treats hover-driven changes as a reason to hold back the click. */
+  @media (hover: hover) {
+    .bento-tile:hover img {
+      border-color: var(--primary);
+    }
+
+    .bento-tile:hover .bento-label {
+      color: var(--primary);
+    }
   }
 
   .bento-label {
@@ -429,10 +437,6 @@
     line-height: 1.5;
     color: var(--muted-foreground);
     transition: color 150ms ease;
-  }
-
-  .bento-tile:hover .bento-label {
-    color: var(--primary);
   }
 
   @media (max-width: 640px) {
