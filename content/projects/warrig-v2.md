@@ -19,7 +19,7 @@ order: 5
 
 **Demos:** [onboard test](https://drive.google.com/file/d/1XuPhXQzk7h6mLjRmhPIosdBGZcpfBiPt/view?usp=sharing) · [on the track](https://drive.google.com/file/d/1ooqtjLS6_LsExHnBpxiQpt4W0Z3EYojF/view?usp=sharing)
 
-The car was already there; this round was about replacing what drives it. We scoped it narrow on purpose: design and fabricate a new power unit for the 2025 Electrathon season and leave the rest of the car alone. Two of us, October through the final race in May. The result: 38 km/h empirical maximum, up from 26 (+46%), and third overall out of 20+ entries plus the fastest lap at the May final. Keeping the scope tight also meant the rest of the car stayed a known quantity, so anything that went wrong on track was almost certainly something we had just made.
+The car was already there; this round was about replacing what drives it. We scoped it narrow on purpose: design and fabricate a new power unit for the 2025 Electrathon season and leave the rest of the car alone. The result: 38 km/h empirical maximum, up from 26 (+46%), and third overall out of 20+ entries plus the fastest lap at the May final. Keeping the scope tight also meant the rest of the car stayed a known quantity, so anything that went wrong on track was almost certainly something we had just made.
 
 ## The mount is the actual job
 
