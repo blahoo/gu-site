@@ -6,7 +6,7 @@ order: 0
 
 # Hey I'm Gregory Gu
 
-Currently in 1A @UWaterloo for computer engineering
+Computer Engineering @ UWaterloo
 
 ![sittingwarrig](/images/sittingwarrig.jpg)
 
