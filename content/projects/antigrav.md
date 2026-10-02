@@ -14,10 +14,9 @@ order: 3
 | **Timeline** | Oct 2025 – June 2026 |
 | **Team** | 2 |
 | **Tools** | Onshape, Ansys FEA, aluminium welding |
+| **Result** | Frame 30% lighter than the Warrig's, −1.61° camber held through roll, 2–3.5 in ride height |
 
-**Demos:** [onboard night chase](https://drive.google.com/file/d/1qXJ4t2WhvrSKP6ufUeH3D5wMhouvbM_b/view?usp=sharing) · [maiden voyage](https://drive.google.com/file/d/1dG_FIXDV7duS3u6ZOHWZH4F3C5nNYbYD/view?usp=sharing)
-
-## What it is
+**Demos:** [onboard night chase](https://drive.google.com/file/d/1qXJ4t2WhvrSKP6ufUeH3D5wMhouvbM_b/view?usp=sharing) · [maiden voyage](https://drive.google.com/file/d/1UvRld5jbtaZ1TDa9qzmsmFy6na3M5w5R/view?usp=sharing)
 
 AntiGrav is a welded aluminium space frame kart with single wishbone suspension, a dynamic camber setup, and a steering wheel that displays its own telemetry. It's the follow-up to the Warrig that came before it, and the thing it's really about is weight.
 
@@ -34,7 +33,7 @@ Aluminium is the part of this that took the most patience. It pulls as it cools,
 ![Welding the aluminium frame in the school shop](/images/projects/antigrav/welding.jpg "Welding in the school shop, mask down, with the part-built frame clamped to the table.")
 ![Close-up of a finished welded tube joint](/images/projects/antigrav/weld-joint.jpg "A diagonal brace joint up close; aluminium shows you every mistake you made.")
 
-## The camber argument
+## Suspension
 
 In a hard corner the chassis rolls, and roll drags the outside wheel toward positive camber, which is exactly when you want that tyre flat on the ground. The single wishbone geometry is set up to fight that: it holds a constant negative camber of -1.61 degrees through the roll instead of giving it away mid-turn.
 
@@ -42,16 +41,12 @@ Ride height is the other half of it. In practice the suspension holds the kart b
 
 ![Aluminium frame with coilovers and rack-and-pinion fitted](/images/projects/antigrav/suspension.jpg "Coilovers and the rack-and-pinion mounted up, frame still sitting on the bench.")
 
-## Telemetry where the driver is already looking
+## Steering wheel HUD
 
 The steering wheel carries a HUD that reads battery voltage plus motor speed and temperature in real time. Voltage is the fuel gauge, and motor temperature is the number you want to watch climbing well before it turns into a problem.
 
 Putting it on the wheel rather than somewhere on the frame was the point. A display you have to look down for is a display you check when it's already too late, and on a kart this low there isn't really a dashboard to look down at anyway.
 
 ![The bare aluminium kart in a parking lot with a laptop](/images/projects/antigrav/kart-parkinglot.jpg "A parking lot counts as a test bench as long as you bring the laptop.")
-
-## Where it landed
-
-The run goes Oct 2025 to June 2026, and what it leaves behind is a chassis 30% lighter than the Warrig's, a suspension that holds -1.61 degrees of camber where it matters, a kart sitting between 2 and 3.5 inches off the ground, and a wheel that reports its own numbers. Two people, one frame.
 
 **Related:** [The "Warrig V2" Powertrain Revision](/projects/warrig-v2) · [The "Warrig V1" Racer](/projects/warrig-v1)

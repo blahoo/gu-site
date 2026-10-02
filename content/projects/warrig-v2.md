@@ -19,9 +19,7 @@ order: 5
 
 **Demos:** [onboard test](https://drive.google.com/file/d/1XuPhXQzk7h6mLjRmhPIosdBGZcpfBiPt/view?usp=sharing) · [on the track](https://drive.google.com/file/d/1ooqtjLS6_LsExHnBpxiQpt4W0Z3EYojF/view?usp=sharing)
 
-## Why a new power unit
-
-The car was already there; this round was about replacing what drives it. We scoped it narrow on purpose: design and fabricate a new power unit for the 2025 Electrathon season and leave the rest of the car alone. Two of us, October through the final race in May. The before number was 26 km/h empirical maximum. Keeping the scope tight also meant the rest of the car stayed a known quantity, so anything that went wrong on track was almost certainly something we had just made.
+The car was already there; this round was about replacing what drives it. We scoped it narrow on purpose: design and fabricate a new power unit for the 2025 Electrathon season and leave the rest of the car alone. Two of us, October through the final race in May. The result: 38 km/h empirical maximum, up from 26 (+46%), and third overall out of 20+ entries plus the fastest lap at the May final. Keeping the scope tight also meant the rest of the car stayed a known quantity, so anything that went wrong on track was almost certainly something we had just made.
 
 ## The mount is the actual job
 
@@ -40,12 +38,6 @@ The controllers needed somewhere to sit as well, so they got laid out before any
 
 ![Three motor controllers laid out with heavy power cabling](/images/projects/warrig-v2/motor-controllers.jpg "Out on the floor rather than in the car, which is where positioning gets decided.")
 
-## How it ran
-
-The number that mattered came off the car: 38 km/h empirical maximum, up from 26. That's a 46% increase. Anything else I could tell you about how it drives is an impression, so I'll leave it at the number.
-
 ![Gregory driving the kart along a campus path](/images/projects/warrig-v2/driving.jpg "Me in the seat, my teammate walking alongside.")
-
-At the May final we took third overall out of twenty-plus entries, and set the fastest lap of the race. Those two results say slightly different things. The fastest lap says the new power unit did exactly what we built it to do. Third overall says the race gets decided by more than outright pace, and that's where the next round of work sits.
 
 **Related:** [The "Warrig V1" Racer](/projects/warrig-v1) · [The "AntiGrav" Racer](/projects/antigrav)

@@ -128,6 +128,9 @@ function linkedImageCount(node: any): number {
 // photo lands. Unknown paths just render without the hint.
 const DIMS: Record<string, number[]> = imageDimensions;
 
+// Photo corner radius. Was "0.5rem"; trimmed to a barely-there rounding.
+const PHOTO_RADIUS = "3px";
+
 export default function MarkdownView({ pageId }: MarkdownViewProps) {
   const [, navigate] = useLocation();
   const [page, setPage] = useState<Page | null>(null);
@@ -333,7 +336,7 @@ export default function MarkdownView({ pageId }: MarkdownViewProps) {
                       height: "auto",
                       aspectRatio: "4 / 3",
                       objectFit: "cover",
-                      borderRadius: "0.5rem",
+                      borderRadius: PHOTO_RADIUS,
                       border: "1px solid var(--border)",
                     }}
                   />
@@ -352,7 +355,7 @@ export default function MarkdownView({ pageId }: MarkdownViewProps) {
                   display: "block",
                   width: "100%",
                   height: "auto",
-                  borderRadius: "0.5rem",
+                  borderRadius: PHOTO_RADIUS,
                   border: "1px solid var(--border)",
                 }}
               />

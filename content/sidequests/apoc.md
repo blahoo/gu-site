@@ -1,6 +1,6 @@
 ---
 title: "Apocalypse Hackathon"
-order: 10
+order: 2
 ---
 
 # Hack Club Apocalypse 
@@ -20,4 +20,7 @@ Apocalypse was, at the time, the largest high school hackathon in Canada (and th
 Of course, this event wouldn’t have been possible with one of most high agency and committed teams I’m proud to be a part of: Mutammin, Arav, Acon, Sam, Shimmy, Ev, Vivian, Ryan, Sarvesh
 
 Key Highlights
-Raised a total of ~$40,000 CAD from both Hack Club and Shopify
+- Raised a total of ~$40,000 CAD from both Hack Club and Shopify, so cost wasn't a barrier for attendees
+- 180+ high school participants over a 3 day event at Shopify HQ Toronto
+- No established brand or previous years to lean on: sourcing meals, building the activities and cold-emailing sponsors was all from scratch
+- Apocalypse attendees went on to organize their own Hack Club events like Boreal Express and Counterspell

@@ -14,6 +14,7 @@ order: 8
 | **Timeline** | June – Aug 2025 |
 | **Team** | 1 |
 | **Stack** | ArduPilot, Raspberry Pi Zero + Pi camera, FPV quad hardware |
+| **Result** | Autonomous flight planning in a grid survey pattern; aerial photography platform for survey and mapping missions |
 
 **Demo:** [liftoff](https://drive.google.com/drive/folders/16dTl3lpo7SFj9BGV8I6KyINorMOtdAt6)
 
@@ -51,6 +52,3 @@ The FPV video link stays useful here even on an autonomous aircraft. It's flying
 
 ![FPV ground station monitor resting on a lap outdoors on grass, two antennas attached to the top](/images/projects/flightmap/fpv-osd.jpg "The text over that feed is the live telemetry, which is how I could tell what the autopilot thought it was doing without waiting for it to land.")
 
-## Where it landed
-
-What I ended up with is a drone that does autonomous flight planning, specifically the grid survey pattern that mapping work actually needs, and an aerial photography platform that can be pointed at a land survey or mapping mission rather than at a hobby flight. It isn't a commercial product and I wasn't trying to build one. It's proof that the survey capability I wanted is reachable with open firmware and a pile of FPV parts, which was the question I set out to answer.
