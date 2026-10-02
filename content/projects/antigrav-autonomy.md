@@ -1,6 +1,6 @@
 ---
 title: "The \"AntiGrav\" Racer Autonomy"
-label: "AntiGrav — Autonomy"
+label: "AntiGrav: Autonomy"
 order: 4
 ---
 
@@ -50,4 +50,4 @@ Two things are done. There's an autonomous steering homing sequence, which is th
 
 What's left is the interesting half. The custom self-driving model is still in development, so nothing here is driving itself yet.
 
-**Related:** [The "AntiGrav" Racer](/projects/antigrav) · [The "Warrig V1" Self-Steering Extension](/projects/warrig-selfdriving) · [eBurb — Autonomy Systems](/projects/eburb-autonomy)
+**Related:** [The "AntiGrav" Racer](/projects/antigrav) · [The "Warrig V1" Self-Steering Extension](/projects/warrig-selfdriving) · [eBurb: Autonomy Systems](/projects/eburb-autonomy)

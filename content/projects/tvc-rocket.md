@@ -12,7 +12,7 @@ order: 9
 | | |
 |---|---|
 | **Timeline** | 2026 – present |
-| **Team** | 1 |
+| **Team** | 2 |
 | **Tools** | Onshape, custom PCB design, ESP32, C, 3D printing |
 | **Mass** | 1200 g today, 600 g target |
 | **Status** | Not yet flown, iterating toward the maiden flight |

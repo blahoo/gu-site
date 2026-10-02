@@ -1,10 +1,9 @@
 ---
-title: "eBurb — Electric Suburban Shuttle"
-label: "eBurb"
+title: "Electric Vehical: eBurb"
 order: 1
 ---
 
-# eBurb — Electric Suburban Shuttle
+# eBurb: Electric Suburban Shuttle
 
 > eBurb is a proof-of-concept electric shuttle built around Miata MX-5 suspension, meant to do short driverless runs around a suburb.
 
@@ -58,4 +57,4 @@ Right now the work is integrating a 2016 Nissan Leaf HV main battery into the ch
 
 The braking side of the vehicle has its own write-up: [choosing a brake booster](/notes/chevy-booster).
 
-**Related:** [eBurb — Autonomy Systems](/projects/eburb-autonomy)
+**Related:** [eBurb: Autonomy Systems](/projects/eburb-autonomy)

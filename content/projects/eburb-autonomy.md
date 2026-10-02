@@ -1,9 +1,9 @@
 ---
-title: "eBurb — Autonomy Systems"
+title: "eBurb Autonomy Systems"
 order: 2
 ---
 
-# eBurb — Autonomy Systems
+# eBurb Autonomy Systems
 
 > eBurb's autonomy side: OEM steering, braking and drive hardware from production vehicles, retrofitted to take orders from me over CAN instead of from the car each part was built for.
 
@@ -49,4 +49,4 @@ Same idea on the drive side, with one difference: the Leaf motor is driven throu
 
 Each of these answers to me electronically now: the booster, the EPS, the angle sensor, the pedal and the Leaf motor. Started in February, still going, still one set of hands on it.
 
-**Related:** [eBurb — Electric Suburban Shuttle](/projects/eburb-chassis)
+**Related:** [eBurb: Electric Suburban Shuttle](/projects/eburb-chassis)
