@@ -1,12 +1,12 @@
 ---
-title: "WOSS Robotics: Team Captain"
+title: "WOSS Robotics"
 label: "WOSS Robotics"
 order: 1
 ---
 
-# WOSS Robotics: Team Captain
+# WOSS Robotics
 
-> The White Oaks high school robotics club: building VEX robots, running a rookie team, and teaching robotics to younger kids.
+> The White Oaks high school robotics club: building VEX robots, team captian, and teaching robotics to younger kids.
 
 | | |
 |---|---|
