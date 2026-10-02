@@ -13,7 +13,7 @@ order: 1
 | **What** | High school VEX robotics club, White Oaks Secondary |
 | **When** | 2023 – 2026 |
 | **Role** | Team captain |
-| **Team** | A rookie team of about 15 |
+| **Club** | 100+ Students |
 | **Built with** | VEX V5, C++, Python |
 | **Highlights** | VEX Worlds qualifier ×2 · Build Award at the Waterloo regional · provincials · HDSB Inspire Award |
 | **Also** | Sponsorships from local businesses, robotics workshops for elementary schools |
