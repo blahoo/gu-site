@@ -13,7 +13,6 @@ order: 6
 |---|---|
 | **Timeline** | Oct 2024 – May 2025 |
 | **Team** | 5–10 |
-| **My scope** | Chassis and powertrain |
 | **Tools** | Onshape, Fusion 360 FEA |
 | **Result** | 26 km/h real-world top speed |
 

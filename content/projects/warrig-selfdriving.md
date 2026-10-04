@@ -36,8 +36,8 @@ order: 7
 | Layer | Detail |
 |---|---|
 | **Feature extractor** | 3 × (convolution + ReLU → max pooling) |
-| **Head** | Fully connected layers |
 | **Output** | 1 node: steering angle θ |
+| **Team** | 3 |
 
 The network is trained by behavioral cloning, learning the mapping from recorded driving, and starts from pretrained weights through transfer learning.
 
