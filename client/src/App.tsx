@@ -6,6 +6,7 @@
 
 import { useState, useEffect } from "react";
 import { Route, Switch, useLocation } from "wouter";
+import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Sidebar from "./components/Sidebar";
@@ -237,10 +238,7 @@ function AppLayout() {
       </div>
 
       {/* Search modal */}
-      <SearchModal
-        open={searchOpen}
-        onClose={() => setSearchOpen(false)}
-      />
+      <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} />
     </div>
   );
 }
@@ -250,6 +248,7 @@ export default function App() {
     <ErrorBoundary>
       <ThemeProvider defaultTheme="dark">
         <AppLayout />
+        <Analytics />
       </ThemeProvider>
     </ErrorBoundary>
   );

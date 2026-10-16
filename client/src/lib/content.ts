@@ -34,9 +34,7 @@ interface ParsedPage extends Page {
 const parsedPagesRecord: Record<string, ParsedPage> = {};
 
 for (const [filePath, raw] of Object.entries(markdownModules)) {
-  const pageId = filePath
-    .replace(/^.*\/content\//, "")
-    .replace(/\.md$/, "");
+  const pageId = filePath.replace(/^.*\/content\//, "").replace(/\.md$/, "");
 
   const { attributes, body } = fm<{
     title?: string;
@@ -71,7 +69,7 @@ function compareByOrder(
   aOrder: number,
   aLabel: string,
   bOrder: number,
-  bLabel: string,
+  bLabel: string
 ): number {
   const aPriority = aOrder < 0 ? Infinity : aOrder;
   const bPriority = bOrder < 0 ? Infinity : bOrder;
@@ -159,7 +157,8 @@ function buildTreeLevel(basePath: string): NavItem[] {
     const folderLabel =
       indexPage?.label === "Overview" || indexPage?.label === indexPage?.title
         ? indexPage?.title || dirName.charAt(0).toUpperCase() + dirName.slice(1)
-        : indexPage?.label || dirName.charAt(0).toUpperCase() + dirName.slice(1);
+        : indexPage?.label ||
+          dirName.charAt(0).toUpperCase() + dirName.slice(1);
 
     result.push({
       item: {
@@ -173,10 +172,10 @@ function buildTreeLevel(basePath: string): NavItem[] {
 
   // Sort by order rules
   result.sort((a, b) =>
-    compareByOrder(a.order, a.item.label, b.order, b.item.label),
+    compareByOrder(a.order, a.item.label, b.order, b.item.label)
   );
 
-  return result.map((r) => r.item);
+  return result.map(r => r.item);
 }
 
 export const navTree: NavItem[] = buildTreeLevel("");

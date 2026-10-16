@@ -95,6 +95,7 @@ Edit the markdown files in `/content` folder:
 ### Update Contact Links
 
 Edit `client/src/components/ContactSection.tsx` to update:
+
 - Email address
 - GitHub profile URL
 - LinkedIn profile URL

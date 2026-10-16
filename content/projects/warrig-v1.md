@@ -1,5 +1,5 @@
 ---
-title: "The \"Warrig V1\" Racer"
+title: 'The "Warrig V1" Racer'
 order: 6
 ---
 
@@ -9,12 +9,12 @@ order: 6
 
 ![The Warrig V1 frame clamped to a bench in the school machine shop](/images/projects/warrig-v1/hero-frame-shop.jpg "The bare frame clamped to the shop table mid-build, before any of the driveline went in.")
 
-| | |
-|---|---|
-| **Timeline** | Oct 2024 – May 2025 |
-| **Team** | 5–10 |
-| **Tools** | Onshape, Fusion 360 FEA |
-| **Result** | 26 km/h real-world top speed |
+|              |                              |
+| ------------ | ---------------------------- |
+| **Timeline** | Oct 2024 – May 2025          |
+| **Team**     | 5–10                         |
+| **Tools**    | Onshape, Fusion 360 FEA      |
+| **Result**   | 26 km/h real-world top speed |
 
 ## What it is
 

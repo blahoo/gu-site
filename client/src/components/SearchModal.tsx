@@ -24,7 +24,7 @@ let fuse: Fuse<Page> | null = null;
 let allPages: Page[] = [];
 
 // Initialize search index
-getAllPages().then((pages) => {
+getAllPages().then(pages => {
   allPages = pages;
   fuse = new Fuse(allPages, {
     keys: [
@@ -50,7 +50,9 @@ function getExcerpt(content: string, query: string): string {
   const start = Math.max(0, idx - 40);
   const end = Math.min(content.length, idx + query.length + 80);
   const excerpt = content.slice(start, end).replace(/[#*`]/g, "");
-  return (start > 0 ? "..." : "") + excerpt + (end < content.length ? "..." : "");
+  return (
+    (start > 0 ? "..." : "") + excerpt + (end < content.length ? "..." : "")
+  );
 }
 
 export default function SearchModal({ open, onClose }: SearchModalProps) {
@@ -92,7 +94,7 @@ export default function SearchModal({ open, onClose }: SearchModalProps) {
   };
 
   // Default results when no query
-  const defaultResults = (allPages || []).slice(0, 6).map((item) => ({ item }));
+  const defaultResults = (allPages || []).slice(0, 6).map(item => ({ item }));
   const displayResults = query.trim().length < 2 ? defaultResults : results;
 
   // Keyboard navigation
@@ -101,10 +103,10 @@ export default function SearchModal({ open, onClose }: SearchModalProps) {
     const handler = (e: KeyboardEvent) => {
       if (e.key === "ArrowUp") {
         e.preventDefault();
-        setSelectedIdx((i) => (i > 0 ? i - 1 : displayResults.length - 1));
+        setSelectedIdx(i => (i > 0 ? i - 1 : displayResults.length - 1));
       } else if (e.key === "ArrowDown") {
         e.preventDefault();
-        setSelectedIdx((i) => (i < displayResults.length - 1 ? i + 1 : 0));
+        setSelectedIdx(i => (i < displayResults.length - 1 ? i + 1 : 0));
       } else if (e.key === "Enter") {
         e.preventDefault();
         if (displayResults[selectedIdx]) {
@@ -122,20 +124,20 @@ export default function SearchModal({ open, onClose }: SearchModalProps) {
 
   return (
     <div className="search-overlay" onClick={onClose}>
-      <div
-        className="search-modal"
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className="search-modal" onClick={e => e.stopPropagation()}>
         {/* Input */}
         <div
           className="flex items-center gap-2 px-3 py-2.5"
           style={{ borderBottom: "1px solid var(--border)" }}
         >
-          <Search size={14} style={{ color: "var(--muted-foreground)", flexShrink: 0 }} />
+          <Search
+            size={14}
+            style={{ color: "var(--muted-foreground)", flexShrink: 0 }}
+          />
           <input
             ref={inputRef}
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={e => setQuery(e.target.value)}
             placeholder="Search pages..."
             className="flex-1 bg-transparent outline-none"
             style={{

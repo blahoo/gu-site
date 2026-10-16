@@ -10,7 +10,7 @@ order: 3
 
 [check it out](https://2025.eurekahacks.ca/)
 
-EurekaHACKS was a 12-hour hackathon run by hs students at Abbey Park High School in Oakville. 
+EurekaHACKS was a 12-hour hackathon run by hs students at Abbey Park High School in Oakville.
 
 What other local hs hackathon lets you compete for 4 Bambu Lab A1-mini printers, Keytrons, and more???
 
