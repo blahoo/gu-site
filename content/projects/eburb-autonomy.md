@@ -9,12 +9,12 @@ order: 2
 
 ![Toyota Corolla EPS column on a desk with test leads and a laptop showing a CAN trace](/images/projects/eburb-autonomy/hero-eps-can.jpg "The column is the easy half; the laptop is where the actual work happens.")
 
-| | |
-|---|---|
-| **Timeline** | Feb 2026 – present |
-| **Team** | 1 |
+|              |                                                                                                                        |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| **Timeline** | Feb 2026 – present                                                                                                     |
+| **Team**     | 1                                                                                                                      |
 | **Hardware** | 2020 Tesla Model 3 brake booster, 2022 Toyota Corolla EPS, OEM angle sensor and throttle pedal, 2016 Nissan Leaf motor |
-| **Method** | CAN, public .dbc files, dealership service schematics |
+| **Method**   | CAN, public .dbc files, dealership service schematics                                                                  |
 
 **Demos:** [steering](https://drive.google.com/file/d/1IdaZ_wL8n1usdoSTimA-GVZJogF9AOfD/view?usp=sharing) · [braking](https://drive.google.com/file/d/1VOVuWqMSjVJX5CiWTpgQC259svGWVd6H/view?usp=sharing)
 

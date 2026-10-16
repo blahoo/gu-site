@@ -10,18 +10,18 @@ This is a static-first personal portfolio and knowledge repository built with **
 
 ### Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Framework | React 18 (SPA) |
-| Bundler | Vite 5 |
-| Language | TypeScript (strict) |
-| Routing | Wouter (lightweight client-side router) |
-| Markdown | react-markdown + remark-gfm + rehype-highlight |
-| Frontmatter | front-matter (npm) |
-| Styling | Tailwind CSS v4 + inline styles |
-| Search | Fuse.js (fuzzy full-text, client-side) |
-| Code Highlighting | highlight.js (GitHub Dark theme) |
-| Fonts | Google Fonts (Roboto, Roboto Mono) |
+| Layer             | Technology                                     |
+| ----------------- | ---------------------------------------------- |
+| Framework         | React 18 (SPA)                                 |
+| Bundler           | Vite 5                                         |
+| Language          | TypeScript (strict)                            |
+| Routing           | Wouter (lightweight client-side router)        |
+| Markdown          | react-markdown + remark-gfm + rehype-highlight |
+| Frontmatter       | front-matter (npm)                             |
+| Styling           | Tailwind CSS v4 + inline styles                |
+| Search            | Fuse.js (fuzzy full-text, client-side)         |
+| Code Highlighting | highlight.js (GitHub Dark theme)               |
+| Fonts             | Google Fonts (Roboto, Roboto Mono)             |
 
 ---
 
@@ -37,35 +37,35 @@ The design prioritizes readability and content density. No gratuitous decoration
 
 All colors use the `oklch` color space for perceptual uniformity.
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--background` | `oklch(0.095 0.002 240)` | Page background (~#0d0d0d) |
-| `--foreground` | `oklch(0.86 0.004 240)` | Primary text (~#dcddde) |
-| `--sidebar` | `oklch(0.11 0.002 240)` | Sidebar background (~#141414) |
-| `--primary` | `#4468F5` | Accent blue — links, active states |
-| `--muted-foreground` | `oklch(0.52 0.008 240)` | Secondary text, nav labels (~#72767d) |
-| `--border` | `oklch(1 0 0 / 0.06)` | Subtle borders (~rgba(255,255,255,0.06)) |
-| `--nav-hover-bg` | `oklch(1 0 0 / 0.05)` | Nav item hover fill |
-| `--nav-active-bg` | `oklch(1 0 0 / 0.09)` | Nav item active fill |
-| `--nav-active-border` | `#4468F5` | Active nav left-border accent |
+| Token                 | Value                    | Usage                                    |
+| --------------------- | ------------------------ | ---------------------------------------- |
+| `--background`        | `oklch(0.095 0.002 240)` | Page background (~#0d0d0d)               |
+| `--foreground`        | `oklch(0.86 0.004 240)`  | Primary text (~#dcddde)                  |
+| `--sidebar`           | `oklch(0.11 0.002 240)`  | Sidebar background (~#141414)            |
+| `--primary`           | `#4468F5`                | Accent blue — links, active states       |
+| `--muted-foreground`  | `oklch(0.52 0.008 240)`  | Secondary text, nav labels (~#72767d)    |
+| `--border`            | `oklch(1 0 0 / 0.06)`    | Subtle borders (~rgba(255,255,255,0.06)) |
+| `--nav-hover-bg`      | `oklch(1 0 0 / 0.05)`    | Nav item hover fill                      |
+| `--nav-active-bg`     | `oklch(1 0 0 / 0.09)`    | Nav item active fill                     |
+| `--nav-active-border` | `#4468F5`                | Active nav left-border accent            |
 
 ### 2.3 Typography
 
-| Element | Font | Size | Weight | Notes |
-|---------|------|------|--------|-------|
-| Body text | Roboto | 0.9rem (14.4px) | 400 | line-height: 1.6 |
-| Markdown body | Roboto | 0.925rem | 400 | line-height: 1.75 |
-| `h1` | Roboto | 1.75rem (28px) | 600 | letter-spacing: -0.02em |
-| `h2` | Roboto | 1.25rem (20px) | 600 | letter-spacing: -0.01em, bottom border |
-| `h3` | Roboto | 1rem (16px) | 600 | |
-| `h4` | Roboto | 0.9rem (14.4px) | 600 | |
-| Code / `pre` | Roboto Mono | 0.82rem | 400 | GitHub Dark highlight theme |
-| Inline code | Roboto Mono | 0.82rem | 400 | Blue-tinted: `oklch(0.78 0.12 265)` |
-| Nav items (depth 0) | Roboto | 0.82rem | 500 | |
-| Nav items (nested) | Roboto | 0.78rem | 400 | |
-| Table headers | Roboto | 0.8rem | 600 | Uppercase, letter-spacing: 0.04em |
-| Sidebar branding | — | — | — | Halftone image, 22px height |
-| Mobile topbar | — | — | — | Halftone image, 20px height |
+| Element             | Font        | Size            | Weight | Notes                                  |
+| ------------------- | ----------- | --------------- | ------ | -------------------------------------- |
+| Body text           | Roboto      | 0.9rem (14.4px) | 400    | line-height: 1.6                       |
+| Markdown body       | Roboto      | 0.925rem        | 400    | line-height: 1.75                      |
+| `h1`                | Roboto      | 1.75rem (28px)  | 600    | letter-spacing: -0.02em                |
+| `h2`                | Roboto      | 1.25rem (20px)  | 600    | letter-spacing: -0.01em, bottom border |
+| `h3`                | Roboto      | 1rem (16px)     | 600    |                                        |
+| `h4`                | Roboto      | 0.9rem (14.4px) | 600    |                                        |
+| Code / `pre`        | Roboto Mono | 0.82rem         | 400    | GitHub Dark highlight theme            |
+| Inline code         | Roboto Mono | 0.82rem         | 400    | Blue-tinted: `oklch(0.78 0.12 265)`    |
+| Nav items (depth 0) | Roboto      | 0.82rem         | 500    |                                        |
+| Nav items (nested)  | Roboto      | 0.78rem         | 400    |                                        |
+| Table headers       | Roboto      | 0.8rem          | 600    | Uppercase, letter-spacing: 0.04em      |
+| Sidebar branding    | —           | —               | —      | Halftone image, 22px height            |
+| Mobile topbar       | —           | —               | —      | Halftone image, 20px height            |
 
 ### 2.4 Layout
 
@@ -87,27 +87,28 @@ Mobile (<lg):
   Sidebar: slide-in overlay from left (260px)
 ```
 
-| Dimension | Value |
-|-----------|-------|
-| Sidebar width | 260px |
-| Right sidebar width | 320px |
-| Content max-width | 740px |
-| Mobile header height | 60px |
+| Dimension               | Value    |
+| ----------------------- | -------- |
+| Sidebar width           | 260px    |
+| Right sidebar width     | 320px    |
+| Content max-width       | 740px    |
+| Mobile header height    | 60px     |
 | Border radius (default) | 0.375rem |
 
 ### 2.5 Interactions
 
-| Interaction | Duration | Easing |
-|-------------|----------|--------|
-| Nav hover/active transitions | 150ms | ease |
-| Search modal entrance | 120ms | ease-out |
-| Page content entrance | 120ms | ease-out (opacity) |
-| Mobile sidebar slide-in | 150ms | ease-out |
-| Link hover | 150ms | ease |
+| Interaction                  | Duration | Easing             |
+| ---------------------------- | -------- | ------------------ |
+| Nav hover/active transitions | 150ms    | ease               |
+| Search modal entrance        | 120ms    | ease-out           |
+| Page content entrance        | 120ms    | ease-out (opacity) |
+| Mobile sidebar slide-in      | 150ms    | ease-out           |
+| Link hover                   | 150ms    | ease               |
 
 ### 2.6 Scrollbar
 
 Custom styled (WebKit):
+
 - Width: 6px
 - Track: transparent
 - Thumb: `oklch(1 0 0 / 0.12)`, 3px radius
@@ -115,11 +116,11 @@ Custom styled (WebKit):
 
 ### 2.7 Branding Assets
 
-| Asset | Location | Usage |
-|-------|----------|-------|
-| `favicon.ico` | `client/public/favicon.ico` | Browser tab icon (GG halftone) |
-| `halftone_gregory_gu.png` | `client/public/halftone_gregory_gu.png` | Sidebar + mobile topbar title |
-| `halftone_gu_white.png` | `client/public/halftone_gu_white.png` | Right sidebar portrait image |
+| Asset                     | Location                                | Usage                          |
+| ------------------------- | --------------------------------------- | ------------------------------ |
+| `favicon.ico`             | `client/public/favicon.ico`             | Browser tab icon (GG halftone) |
+| `halftone_gregory_gu.png` | `client/public/halftone_gregory_gu.png` | Sidebar + mobile topbar title  |
+| `halftone_gu_white.png`   | `client/public/halftone_gu_white.png`   | Right sidebar portrait image   |
 
 ---
 
@@ -137,33 +138,32 @@ Every `.md` file should begin with a YAML frontmatter block:
 
 ```yaml
 ---
-title: "Page Title"       # REQUIRED — shown as the page heading
-label: "Nav Label"         # optional — sidebar label (defaults to title)
-order: 0                   # optional — sort priority (defaults to -1)
-nav: true                  # optional — show in sidebar (defaults to true)
+title: "Page Title" # REQUIRED — shown as the page heading
+label: "Nav Label" # optional — sidebar label (defaults to title)
+order: 0 # optional — sort priority (defaults to -1)
+nav: true # optional — show in sidebar (defaults to true)
 ---
-
 Your markdown content goes here...
 ```
 
 #### Field Reference
 
-| Field | Type | Default | Description |
-|-------|------|---------|-------------|
-| `title` | string | filename | Page heading and document title. **Always set this.** |
-| `label` | string | title | The text shown in the sidebar navigation. Use this when you want a shorter sidebar label than the full title (e.g., title: "About Me", label: "About Me" — or title: "Experience", label: "Overview" for an index page). |
-| `order` | number | -1 | Controls sort position within its directory. See ordering rules below. |
-| `nav` | boolean | true | If `false`, the page is accessible by URL but hidden from the sidebar. Useful for `index.md` files that only exist to set folder metadata. |
+| Field   | Type    | Default  | Description                                                                                                                                                                                                              |
+| ------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `title` | string  | filename | Page heading and document title. **Always set this.**                                                                                                                                                                    |
+| `label` | string  | title    | The text shown in the sidebar navigation. Use this when you want a shorter sidebar label than the full title (e.g., title: "About Me", label: "About Me" — or title: "Experience", label: "Overview" for an index page). |
+| `order` | number  | -1       | Controls sort position within its directory. See ordering rules below.                                                                                                                                                   |
+| `nav`   | boolean | true     | If `false`, the page is accessible by URL but hidden from the sidebar. Useful for `index.md` files that only exist to set folder metadata.                                                                               |
 
 ### 3.3 Ordering Rules
 
 Pages and folders within the same directory are sorted by `order`:
 
-| Order Value | Behavior |
-|-------------|----------|
-| `order: 0` | **Highest priority** — appears first |
-| `order: 1, 2, 3...` | Ascending priority — appears in numerical order |
-| `order: -1` (or unset) | **Lowest priority** — appears last |
+| Order Value            | Behavior                                        |
+| ---------------------- | ----------------------------------------------- |
+| `order: 0`             | **Highest priority** — appears first            |
+| `order: 1, 2, 3...`    | Ascending priority — appears in numerical order |
+| `order: -1` (or unset) | **Lowest priority** — appears last              |
 
 **Tiebreaking:** When two items have the same effective priority, they are sorted **alphabetically by label**.
 
@@ -200,12 +200,12 @@ Files named `index.md` or `overview.md` serve a special purpose — they provide
 - **`nav: false`**: Hides the index page itself from the sidebar children (folder still appears as a collapsible group)
 - **`nav: true`** (default): The index page appears as the first child item under the folder (useful for "Overview" pages)
 
-| Pattern | Folder label source | Index visible in nav? |
-|---------|--------------------|-----------------------|
-| `index.md` with `nav: false` | Uses `title` or `label` from frontmatter | No — folder acts as a pure grouping container |
-| `index.md` with `nav: true` | Uses `title` from frontmatter | Yes — appears as first child (e.g., "Overview") |
-| `overview.md` with `nav: true` | Uses `title` from frontmatter | Yes — appears as first child (e.g., "Overview") |
-| No index file | Auto-capitalizes directory name | N/A |
+| Pattern                        | Folder label source                      | Index visible in nav?                           |
+| ------------------------------ | ---------------------------------------- | ----------------------------------------------- |
+| `index.md` with `nav: false`   | Uses `title` or `label` from frontmatter | No — folder acts as a pure grouping container   |
+| `index.md` with `nav: true`    | Uses `title` from frontmatter            | Yes — appears as first child (e.g., "Overview") |
+| `overview.md` with `nav: true` | Uses `title` from frontmatter            | Yes — appears as first child (e.g., "Overview") |
+| No index file                  | Auto-capitalizes directory name          | N/A                                             |
 
 ### 3.5 Nesting (Arbitrary Depth)
 
@@ -247,11 +247,11 @@ Notes
 
 URLs map directly to page IDs (which are derived from file paths):
 
-| File Path | Page ID | URL |
-|-----------|---------|-----|
-| `content/home.md` | `home` | `/home` or `/` |
-| `content/about/index.md` | `about/index` | `/about/index` |
-| `content/notes/systems.md` | `notes/systems` | `/notes/systems` |
+| File Path                                      | Page ID                             | URL                                  |
+| ---------------------------------------------- | ----------------------------------- | ------------------------------------ |
+| `content/home.md`                              | `home`                              | `/home` or `/`                       |
+| `content/about/index.md`                       | `about/index`                       | `/about/index`                       |
+| `content/notes/systems.md`                     | `notes/systems`                     | `/notes/systems`                     |
 | `content/notes/cyber/blackhat/exploitation.md` | `notes/cyber/blackhat/exploitation` | `/notes/cyber/blackhat/exploitation` |
 
 The root URL `/` automatically loads `home`.
@@ -280,7 +280,7 @@ def hello():
 
 ```markdown
 | Column A | Column B |
-|----------|----------|
+| -------- | -------- |
 | Value 1  | Value 2  |
 ```
 
@@ -361,7 +361,7 @@ If you want a visible "Overview" page as the first item in a folder:
 title: "Projects"
 label: "Overview"
 order: 3
-nav: true          # <-- this makes it visible as a child
+nav: true # <-- this makes it visible as a child
 ---
 ```
 
@@ -441,6 +441,7 @@ gu-site-v2/
 ### `client/src/lib/content.ts`
 
 The content engine. This file:
+
 1. Glob-imports all `.md` files from `/content/` at build time
 2. Parses YAML frontmatter from each file
 3. Builds a recursive `NavItem[]` tree from the folder structure
@@ -462,6 +463,7 @@ export async function getAllPages(): Promise<Page[]>;
 ### `client/src/index.css`
 
 The complete design system in one file. Contains:
+
 - CSS custom properties (color tokens, spacing, transitions)
 - Tailwind v4 integration (`@import "tailwindcss"`)
 - All component styles: nav items, markdown body, search modal, code blocks, tables, tags, scrollbars
@@ -469,6 +471,7 @@ The complete design system in one file. Contains:
 ### `client/src/App.tsx`
 
 Root layout component. Manages:
+
 - 3-column desktop layout (sidebar / content / contact)
 - Mobile responsive topbar with hamburger menu
 - Slide-in mobile sidebar overlay
@@ -500,6 +503,7 @@ Vite watches all files matched by `import.meta.glob`. When you edit a markdown f
 ### Adding New Dependencies
 
 The content system depends on:
+
 - `front-matter` — YAML frontmatter parsing
 - `react-markdown` — Markdown-to-React rendering
 - `remark-gfm` — GitHub Flavored Markdown support
@@ -517,7 +521,6 @@ The content system depends on:
 ---
 title: "My Page"
 ---
-
 # Fully specified page
 ---
 title: "My Detailed Page"
@@ -525,14 +528,12 @@ label: "Short Label"
 order: 2
 nav: true
 ---
-
 # Folder metadata (hidden from nav)
 ---
 title: "Category Name"
 order: 3
 nav: false
 ---
-
 # Overview page (visible as first child)
 ---
 title: "Section Name"
@@ -544,18 +545,18 @@ nav: true
 
 ### Ordering Quick Reference
 
-| Want this position? | Set this |
-|--------------------|----------|
-| First in section | `order: 0` |
-| Second | `order: 1` |
-| Somewhere in the middle | `order: 2-99` |
-| Last (default) | `order: -1` or omit |
+| Want this position?     | Set this            |
+| ----------------------- | ------------------- |
+| First in section        | `order: 0`          |
+| Second                  | `order: 1`          |
+| Somewhere in the middle | `order: 2-99`       |
+| Last (default)          | `order: -1` or omit |
 
 ### Naming Conventions
 
-| Convention | Example | Purpose |
-|-----------|---------|---------|
-| `index.md` | `notes/index.md` | Folder metadata |
-| `overview.md` | `projects/overview.md` | Folder metadata (visible "Overview" page) |
-| Kebab-case filenames | `network-security.md` | Leaf pages |
-| Kebab-case directories | `notes/cyber/blackhat/` | Subcategories |
+| Convention             | Example                 | Purpose                                   |
+| ---------------------- | ----------------------- | ----------------------------------------- |
+| `index.md`             | `notes/index.md`        | Folder metadata                           |
+| `overview.md`          | `projects/overview.md`  | Folder metadata (visible "Overview" page) |
+| Kebab-case filenames   | `network-security.md`   | Leaf pages                                |
+| Kebab-case directories | `notes/cyber/blackhat/` | Subcategories                             |

@@ -9,13 +9,13 @@ order: 1
 
 ![Welding the steel tube chassis in the garage](/images/projects/eburb-chassis/hero-welding.jpg "A home garage, a flux core welder, and a kayak that is permanently in the way.")
 
-| Spec | Detail |
-|---|---|
-| **Timeline** | Sept 2025 – present |
-| **Team** | 2 |
-| **Tools** | Onshape, Fusion 360 FEA, flux-core welding |
-| **Donor hardware** | Mazda Miata MX-5 subframe and suspension, 2016 Nissan Leaf HV pack |
-| **Funding** | STEM climate project grants from the Town of Oakville and Bloomberg Philanthropies |
+| Spec               | Detail                                                                             |
+| ------------------ | ---------------------------------------------------------------------------------- |
+| **Timeline**       | Sept 2025 – present                                                                |
+| **Team**           | 2                                                                                  |
+| **Tools**          | Onshape, Fusion 360 FEA, flux-core welding                                         |
+| **Donor hardware** | Mazda Miata MX-5 subframe and suspension, 2016 Nissan Leaf HV pack                 |
+| **Funding**        | STEM climate project grants from the Town of Oakville and Bloomberg Philanthropies |
 
 ## What it is
 

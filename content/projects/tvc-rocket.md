@@ -11,11 +11,11 @@ order: 9
 
 ![The assembled TVC rocket on the bench](/images/projects/tvc-rocket/hero-rocket.jpg "Where the airframe sits right now: printed white body, green gimbal collar down near the motor, four fins at the tail.")
 
-| | |
-|---|---|
-| **Timeline** | 2026 – present |
-| **Team** | 2 |
-| **Tools** | Onshape, custom PCB design, ESP32, C, 3D printing |
+|              |                                                   |
+| ------------ | ------------------------------------------------- |
+| **Timeline** | 2026 – present                                    |
+| **Team**     | 2                                                 |
+| **Tools**    | Onshape, custom PCB design, ESP32, C, 3D printing |
 
 ## Where it came from
 
@@ -58,4 +58,3 @@ The current version is a breakout PCB, hand assembled at the bench. It gets repl
 The control code is written in C. Attitude is tracked with quaternions instead of Euler angles, mostly to avoid gimbal lock, and the correction runs through a PID loop driving the two gimbal servos.
 
 ![Bench testing the flight computer](/images/projects/tvc-rocket/bench-test.jpg "Multimeter and alligator clips on the board while it drives the servos, checking the hardware against the schematic.")
-

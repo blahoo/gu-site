@@ -17,8 +17,12 @@ interface SidebarProps {
 
 // Recursively check if any descendant matches the current path
 function hasActiveDescendant(item: NavItem, currentPath: string): boolean {
-  if (currentPath === item.id || currentPath.startsWith(item.id + '/')) return true;
-  return item.children?.some(child => hasActiveDescendant(child, currentPath)) || false;
+  if (currentPath === item.id || currentPath.startsWith(item.id + "/"))
+    return true;
+  return (
+    item.children?.some(child => hasActiveDescendant(child, currentPath)) ||
+    false
+  );
 }
 
 function NavTreeItem({
@@ -34,25 +38,25 @@ function NavTreeItem({
   const [expanded, setExpanded] = useState(() => {
     // Auto-expand if current path is under this item (any depth)
     if (!item.children) return false;
-    const raw = location.startsWith('/') ? location.slice(1) : location;
+    const raw = location.startsWith("/") ? location.slice(1) : location;
     const initPath = raw === "" ? "home" : raw;
     return item.children.some(child => hasActiveDescendant(child, initPath));
   });
 
-  const rawPath = location.startsWith('/') ? location.slice(1) : location;
+  const rawPath = location.startsWith("/") ? location.slice(1) : location;
   const currentPath = rawPath === "" ? "home" : rawPath;
   const isActive = currentPath === item.id;
   const hasChildren = item.children && item.children.length > 0;
 
   // Check if any descendant is active (recursive)
-  const isParentActive = hasChildren && item.children?.some(child =>
-    hasActiveDescendant(child, currentPath)
-  );
+  const isParentActive =
+    hasChildren &&
+    item.children?.some(child => hasActiveDescendant(child, currentPath));
   const paddingLeft = depth === 0 ? "0.5rem" : `${0.5 + depth * 0.875}rem`;
 
   const handleClick = () => {
     if (hasChildren) {
-      setExpanded((e) => !e);
+      setExpanded(e => !e);
     }
     if (!hasChildren) {
       navigate(`/${item.id}`);
@@ -68,7 +72,7 @@ function NavTreeItem({
         onClick={handleClick}
         role="button"
         tabIndex={0}
-        onKeyDown={(e) => e.key === "Enter" && handleClick()}
+        onKeyDown={e => e.key === "Enter" && handleClick()}
       >
         {/* Chevron for expandable items */}
         {hasChildren ? (
@@ -98,7 +102,7 @@ function NavTreeItem({
       {/* Children */}
       {hasChildren && expanded && (
         <div>
-          {item.children!.map((child) => (
+          {item.children!.map(child => (
             <NavTreeItem
               key={child.id}
               item={child}
@@ -140,7 +144,12 @@ export default function Sidebar({
             onMobileClose();
           }}
           className="flex items-center justify-center hover:opacity-80 transition-opacity"
-          style={{ background: "none", border: "none", padding: 0, width: "100%" }}
+          style={{
+            background: "none",
+            border: "none",
+            padding: 0,
+            width: "100%",
+          }}
         >
           <img
             src="/halftone_gregory_gu.png"
@@ -165,11 +174,11 @@ export default function Sidebar({
             color: "var(--muted-foreground)",
             fontSize: "0.78rem",
           }}
-          onMouseEnter={(e) => {
+          onMouseEnter={e => {
             (e.currentTarget as HTMLElement).style.background =
               "oklch(1 0 0 / 0.07)";
           }}
-          onMouseLeave={(e) => {
+          onMouseLeave={e => {
             (e.currentTarget as HTMLElement).style.background =
               "oklch(1 0 0 / 0.04)";
           }}
@@ -193,7 +202,7 @@ export default function Sidebar({
 
       {/* Navigation tree */}
       <nav className="flex-1 overflow-y-auto px-2 py-1">
-        {navTree.map((item) => (
+        {navTree.map(item => (
           <NavTreeItem
             key={item.id}
             item={item}
@@ -202,7 +211,6 @@ export default function Sidebar({
           />
         ))}
       </nav>
-
     </div>
   );
 
@@ -216,10 +224,7 @@ export default function Sidebar({
       {/* Mobile overlay */}
       {mobileOpen && (
         <>
-          <div
-            className="sidebar-overlay md:hidden"
-            onClick={onMobileClose}
-          />
+          <div className="sidebar-overlay md:hidden" onClick={onMobileClose} />
           <aside
             className="md:hidden fixed left-0 top-0 h-screen z-30 flex"
             style={{ animation: "slideInLeft 150ms ease-out" }}
@@ -231,4 +236,3 @@ export default function Sidebar({
     </>
   );
 }
-

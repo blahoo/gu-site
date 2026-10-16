@@ -1,5 +1,5 @@
 ---
-title: "The \"Warrig V2\" Powertrain Revision"
+title: 'The "Warrig V2" Powertrain Revision'
 order: 5
 ---
 
@@ -9,13 +9,13 @@ order: 5
 
 ![The number 843 kart on track, black and white panorama](/images/projects/warrig-v2/hero-track.jpg "Car 843, White Oaks Electrathon. The low three-wheeled layout is the package the new power unit had to live in.")
 
-| Spec | Detail |
-|---|---|
-| **Timeline** | Oct 2025 – May 2026 |
-| **Team** | 2 |
-| **Season** | 2026 Electrathon |
-| **Tools** | Aluminium TIG welding, manual mill |
-| **Result** | 3rd overall and fastest lap at the May final, 20+ entries |
+| Spec         | Detail                                                    |
+| ------------ | --------------------------------------------------------- |
+| **Timeline** | Oct 2025 – May 2026                                       |
+| **Team**     | 2                                                         |
+| **Season**   | 2026 Electrathon                                          |
+| **Tools**    | Aluminium TIG welding, manual mill                        |
+| **Result**   | 3rd overall and fastest lap at the May final, 20+ entries |
 
 **Demos:** [onboard test](https://drive.google.com/file/d/1XuPhXQzk7h6mLjRmhPIosdBGZcpfBiPt/view?usp=sharing) · [on the track](https://drive.google.com/file/d/1ooqtjLS6_LsExHnBpxiQpt4W0Z3EYojF/view?usp=sharing)
 
@@ -28,7 +28,7 @@ A powertrain revision included a multimotor drive unit of 3 WestCoast design Kra
 ![Aluminium motor mount bracket clamped in a vise](/images/projects/warrig-v2/weld-vise.jpg "Clamped up with the stacked bead run down the joint; the vise is there to hold the bracket flat against the heat.")
 ![Finished aluminium motor mount plate with the drive shaft through it](/images/projects/warrig-v2/motor-mount.jpg "That bolt pattern has to agree with the motor on one side and the car on the other, and the shaft through the middle is the alignment everything else gets judged against.")
 
-We made the mount out of aluminium and joined it with TIG. TIG is slower and fussier than anything else in the shop, but aluminium was extremely lightweight and thermally acted positively for the drive unit due to its high thermal conductivity. The mounting plates were drilled and marked on a manual mill. 
+We made the mount out of aluminium and joined it with TIG. TIG is slower and fussier than anything else in the shop, but aluminium was extremely lightweight and thermally acted positively for the drive unit due to its high thermal conductivity. The mounting plates were drilled and marked on a manual mill.
 
 The controllers needed somewhere to sit as well, so they got laid out before anything went in the car.
 

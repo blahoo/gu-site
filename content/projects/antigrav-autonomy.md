@@ -1,5 +1,5 @@
 ---
-title: "The \"AntiGrav\" Racer Autonomy"
+title: 'The "AntiGrav" Racer Autonomy'
 label: "AntiGrav: Autonomy"
 order: 4
 ---
@@ -10,17 +10,17 @@ order: 4
 
 ![The AntiGrav in the garage with the compute stack mounted on the frame](/images/projects/antigrav-autonomy/compute-install.jpg "Compute and cable run mounted on the frame.")
 
-| Spec | Detail |
-|---|---|
-| **Timeline** | Aug 2026 – present |
-| **Team** | 2 |
-| **Status** | Autonomous steering homing working · platform complete · self-driving model in development |
-| **Compute** | Jetson Orin Nano |
-| **Steering** | Custom EPS module on a Kraken X60 |
-| **Drive and braking** | Kraken X60 drive unit; braking through the motor, no separate brake actuator |
-| **Bus** | CAN between the Orin and both Kraken units |
-| **Vision** | 4 cameras: 2× PiCam3 Wide, 1× ArduCam Ultra-Wide, 1× ArduCam |
-| **Base vehicle** | [The "AntiGrav" Racer](/projects/antigrav) |
+| Spec                  | Detail                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------ |
+| **Timeline**          | Aug 2026 – present                                                                         |
+| **Team**              | 2                                                                                          |
+| **Status**            | Autonomous steering homing working · platform complete · self-driving model in development |
+| **Compute**           | Jetson Orin Nano                                                                           |
+| **Steering**          | Custom EPS module on a Kraken X60                                                          |
+| **Drive and braking** | Kraken X60 drive unit; braking through the motor, no separate brake actuator               |
+| **Bus**               | CAN between the Orin and both Kraken units                                                 |
+| **Vision**            | 4 cameras: 2× PiCam3 Wide, 1× ArduCam Ultra-Wide, 1× ArduCam                               |
+| **Base vehicle**      | [The "AntiGrav" Racer](/projects/antigrav)                                                 |
 
 **Demo:** [EPS calibration](https://drive.google.com/file/d/10xfbLiy33z1sQ2-U9XEOumM7s8hWIa3p/view?usp=sharing)
 

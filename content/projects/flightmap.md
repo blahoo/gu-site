@@ -9,12 +9,12 @@ order: 8
 
 ![The quadcopter in flight, seen as a small silhouette against a pale blue sky above a playing field](/images/projects/flightmap/hero-inflight.jpg "Out over the test field, where the whole platform is a dot from the ground.")
 
-| Field | Value |
-|---|---|
-| **Timeline** | June – Aug 2025 |
-| **Team** | 1 |
-| **Stack** | ArduPilot, Raspberry Pi Zero + Pi camera, FPV quad hardware |
-| **Result** | Autonomous flight planning in a grid survey pattern; aerial photography platform for survey and mapping missions |
+| Field        | Value                                                                                                            |
+| ------------ | ---------------------------------------------------------------------------------------------------------------- |
+| **Timeline** | June – Aug 2025                                                                                                  |
+| **Team**     | 1                                                                                                                |
+| **Stack**    | ArduPilot, Raspberry Pi Zero + Pi camera, FPV quad hardware                                                      |
+| **Result**   | Autonomous flight planning in a grid survey pattern; aerial photography platform for survey and mapping missions |
 
 **Demo:** [liftoff](https://drive.google.com/drive/folders/16dTl3lpo7SFj9BGV8I6KyINorMOtdAt6)
 
@@ -51,4 +51,3 @@ Bench behaviour and flight behaviour are not the same thing, so the design only 
 The FPV video link stays useful here even on an autonomous aircraft. It's flying itself, sure, but I'm still the one who has to notice when it's flying itself somewhere I didn't intend.
 
 ![FPV ground station monitor resting on a lap outdoors on grass, two antennas attached to the top](/images/projects/flightmap/fpv-osd.jpg "The text over that feed is the live telemetry, which is how I could tell what the autopilot thought it was doing without waiting for it to land.")
-

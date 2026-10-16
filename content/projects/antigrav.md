@@ -9,12 +9,12 @@ order: 3
 
 ![The AntiGrav at night, seen from the driver's seat, HUD lit](/images/projects/antigrav/hero-night-hud.jpg "From the driver's seat after dark; the HUD sits right in the line of sight and the headlight does the rest of the work.")
 
-| Spec | Detail |
-|---|---|
-| **Timeline** | Oct 2025 – June 2026 |
-| **Team** | 2 |
-| **Tools** | Onshape, Ansys FEA, aluminium welding |
-| **Result** | Frame 30% lighter than the Warrig's, −1.61° camber held through roll, 2–3.5 in ride height |
+| Spec         | Detail                                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------ |
+| **Timeline** | Oct 2025 – June 2026                                                                       |
+| **Team**     | 2                                                                                          |
+| **Tools**    | Onshape, Ansys FEA, aluminium welding                                                      |
+| **Result**   | Frame 30% lighter than the Warrig's, −1.61° camber held through roll, 2–3.5 in ride height |
 
 **Demos:** [onboard night chase](https://drive.google.com/file/d/1qXJ4t2WhvrSKP6ufUeH3D5wMhouvbM_b/view?usp=sharing) · [maiden voyage](https://drive.google.com/file/d/1UvRld5jbtaZ1TDa9qzmsmFy6na3M5w5R/view?usp=sharing)
 
