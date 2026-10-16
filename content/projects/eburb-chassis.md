@@ -21,7 +21,7 @@ order: 1
 
 eBurb is an electric vehicle POC for short driverless shuttling in suburban areas. The idea we're building toward is the short suburban trips that don't really justify getting a car out. The look is borrowed from the cybertruck.
 
-There are two of us, we started in September 2025, and it's still very much in progress. The build is funded by STEM climate project grants from the Town of Oakville and Bloomberg Philanthropies.
+The project was funded by STEM climate project grants from the Bloomberg Philanthropies and the Town of Oakville.
 
 ![Onshape render of the eBurb tube chassis](/images/projects/eburb-chassis/cad-frame.jpg "The frame in Onshape, with the seat pan and floor drawn as part of the structure rather than bolted on later.")
 ![Onshape wireframe with side safety panels](/images/projects/eburb-chassis/cad-panels.jpg "Same frame with the safety walls added, which is when the thing stopped looking like a go-kart.")

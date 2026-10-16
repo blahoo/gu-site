@@ -1,9 +1,9 @@
 ---
-title: "FlightMap Aerial Survey Drone"
+title: "Aerial Survey Drone"
 order: 8
 ---
 
-# FlightMap Aerial Survey Drone
+# FlightMap: Aerial Survey Drone
 
 > FlightMap is an FPV quadcopter I rebuilt into an autonomous survey platform that flies a grid on its own and photographs whatever is underneath it.
 
